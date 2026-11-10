@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>走走 · 在地轻徒步</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="phone">
+  <div id="statusbar">
+    <span>9:41</span>
+    <div class="sicons">
+      <svg viewBox="0 0 18 12"><rect x="0" y="7" width="3" height="5" rx="1" fill="currentColor"/><rect x="5" y="5" width="3" height="7" rx="1" fill="currentColor"/><rect x="10" y="2.5" width="3" height="9.5" rx="1" fill="currentColor"/><rect x="15" y="0" width="3" height="12" rx="1" fill="currentColor"/></svg>
+      <svg viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M1.5 4.5a10 10 0 0 1 13 0"/><path d="M4 7.2a6.4 6.4 0 0 1 8 0"/><circle cx="8" cy="10" r="1.2" fill="currentColor" stroke="none"/></svg>
+      <svg viewBox="0 0 25 12" style="width:22px"><rect x="0.5" y="0.5" width="21" height="11" rx="3" fill="none" stroke="currentColor"/><rect x="2.5" y="2.5" width="15" height="7" rx="1.5" fill="currentColor"/><rect x="23" y="4" width="2" height="4" rx="1" fill="currentColor"/></svg>
+    </div>
+  </div>
+
+  <div id="screens">
+    <!-- 主 tab 屏 -->
+    <section class="screen" id="screen-shop"></section>
+    <section class="screen" id="screen-product"></section>
+    <section class="screen" id="screen-zine"></section>
+    <section class="screen" id="screen-me"></section>
+
+    <!-- 流程 overlay 屏 -->
+    <section class="overlay-screen" id="intro"></section>
+    <section class="overlay-screen" id="map"></section>
+    <section class="overlay-screen" id="reader"></section>
+    <section class="overlay-screen" id="finish"></section>
+
+    <!-- 任务卡 bottom sheet -->
+    <div id="sheet-mask"></div>
+    <div id="task-sheet"></div>
+
+    <!-- 全局 toast -->
+    <div id="toast"></div>
+  </div>
+
+  <nav id="tabbar"></nav>
+</div>
+
+<script src="mock.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
